@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustia Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div>
+            <img src="assets/logo.jpeg" class="logo-icon" alt="logo" width="40px">
+        </div>
+        <section>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#our">Our</a>
+            <a class="nav-item" href="#message">Message Us</a>
+        </section>
+    </nav>
+    <section>
+        <!--Home-->
+        <section id="home">
+            <header>
+                <h1>Hi Guys, Welcome to My Website</h1>
+                <p>Ini adalah tugas dari membuat website untuk menyelesaikan Bootcamp RevoU</p>
+                <img src="assets/poster.jpg" alt="poster" width="1366px" height="578px">
+            </header>
+        </section>
+        <hr>
+        <!--Our-->
+        <section id="our">
+            <header>
+                <h1>Our Facilities</h1>
+            </header>
+            <article>
+                <div class="card">
+                    <div class="card-facilities">
+                        <img src="assets/teacher.jpg" alt="logo" width="50px" height="50px">
+                        <p>Professional Teacher</p>
+                    </div>
+                    <div class="card-facilities">
+                        <img src="assets/sport.jpg" alt="logo" width="50px" height="50px">
+                        <p>Sport Field</p>
+                    </div>
+                    <div class="card-facilities">
+                        <img src="assets/class.jpg" alt="logo" width="50px" height="50px">
+                        <p>Classroom</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    <hr>
+        <!--Message Us-->
+        <section id="message">
+            <header>
+                <h1>Message Us</h1>
+                <div>
+                    <form id="contactForm" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tgllahir">Tanggal Lahir</label>
+                            <input type="date" id="tgllahir" name="tgllahir" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jeniskelamin">Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <input type="radio" id="option1" name="jeniskelamin" value="perempuan" required>
+                                <label for="option1">Perempuan</label>
+                                <input type="radio" id="option2" name="jeniskelamin" value="lakilaki">
+                                <label for="option2">Laki-laki</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Kirim</button>
+                        </div>
+                    </form>
+                    <div id="formData"></div>
+                </div>
+            </section>
+        </section>
+        <script src="js/script.js"></script>
+</body>
+</html>
